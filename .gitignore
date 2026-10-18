@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+credentials/
+data/
+client_secret*.json
+google-desktop.json
+accounts.conf
+*.dpapi

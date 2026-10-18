@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MyDrive 是 Windows 雲端磁碟工具，連接 Google Drive 與 NAS，透過檔案總管按需存取遠端檔案。提供繁體中文介面、免安裝版與安裝版。">
+  <meta name="theme-color" content="#007e7a">
+  <title>MyDrive｜你的雲端，隨手存取</title>
+  <link rel="icon" href="assets/mydrive.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳至主要內容</a>
+  <header class="site-header"><div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="MyDrive 首頁"><img src="assets/mydrive.svg" alt="" width="38" height="38">MyDrive</a>
+    <nav class="nav" aria-label="主要導覽"><a href="#features">功能</a><a href="#start">開始使用</a><a href="privacy.html">隱私權政策</a><a href="https://github.com/bos-tw/mydrive-site">GitHub ↗</a></nav>
+  </div></header>
+  <main id="main">
+    <section class="wrap hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">WINDOWS 雲端磁碟 · v2.0.0</p>
+        <h1 id="hero-title">你的雲端，<br>隨手存取。</h1>
+        <p class="lead">將 Google Drive 與 NAS 掛載成 Windows 磁碟。從熟悉的檔案總管開啟、儲存與管理檔案，依需要讀取遠端內容。</p>
+        <div class="actions"><a class="button" href="#start">開始使用 <span aria-hidden="true">&nbsp;→</span></a><a class="button secondary" href="https://github.com/bos-tw/mydrive-site">查看 GitHub 專案</a></div>
+        <p class="small hero-footnote">Windows 10／11 x64 · 繁體中文 · 免安裝版與安裝版</p>
+      </div>
+      <div class="drive-visual" role="img" aria-label="掛載示意：MyDrive 將 Google Drive、WebDAV、SFTP 或 FTP 連接為 Windows 的 Z 槽。">
+        <p class="visual-label">檔案總管裡，多一個熟悉的入口</p>
+        <div class="disk-card"><div class="disk-heading"><div class="disk-glyph">Z:</div><div><strong>我的雲端磁碟</strong><span>MyDrive · Windows 磁碟掛載</span></div></div><div class="disk-bar" aria-hidden="true"></div></div>
+        <div class="visual-connector" aria-hidden="true">↕</div>
+        <div class="services"><span>Google Drive</span><span>WebDAV</span><span>SFTP</span><span>FTP / FTPS</span></div>
+        <p class="visual-note">掛載示意；可用空間與存取權限依儲存服務而定。</p>
+      </div>
+    </section>
+    <section id="features" class="section"><div class="wrap">
+      <div class="section-intro"><h2>把遠端檔案，<br>接回日常工作。</h2><p>MyDrive 是由 bos-tw 維護的 Windows 桌面工具。透過 rclone 存取儲存服務，搭配 WinFsp 提供磁碟掛載，讓雲端檔案接入既有的工作流程。</p></div>
+      <div class="features">
+        <article class="feature"><span class="number">01 / 存取</span><h3>Google Drive 與 NAS</h3><p>連接個人 Google Drive，或使用 WebDAV、SFTP、FTP／FTPS 存取 NAS。可選讀寫或唯讀模式，從程式內瀏覽、上下載及管理檔案。</p></article>
+        <article class="feature"><span class="number">02 / 掛載</span><h3>選擇自己的磁碟代號</h3><p>選擇起始資料夾與磁碟代號，以本機固定磁碟或網路磁碟模式掛載。使用本機快取按需存取，不必先同步整個遠端空間。</p></article>
+        <article class="feature"><span class="number">03 / 自動連線</span><h3>登入 Windows 後接續工作</h3><p>可設定隨 Windows 啟動、自動解鎖與掛載。網路暫時無法連線時每 60 秒重試；Google 要求重新授權時，程式會提示重新登入。</p></article>
+      </div>
+    </div></section>
+    <section class="section data-section" aria-labelledby="data-title"><div class="wrap data-grid">
+      <div><p class="eyebrow">GOOGLE DRIVE 與你的資料</p><h2 id="data-title">由你授權，<br>在你的電腦存取。</h2><p>Google 登入會開啟官方授權網頁。MyDrive 使用取得的權限，提供檔案瀏覽、磁碟掛載及你選擇的檔案操作。</p><a href="privacy.html">閱讀完整隱私權政策 →</a></div>
+      <ul class="data-list">
+        <li><strong>先選擇存取方式</strong><span>唯讀模式可列出與下載；讀寫模式可新增、修改及刪除。指定資料夾限制顯示範圍，並不縮小 Google 授權範圍。</span></li>
+        <li><strong>本機保存登入設定</strong><span>帳戶與權杖存入加密設定檔，檔案快取保留於你的電腦。快取本身未由 MyDrive 額外加密。</span></li>
+        <li><strong>隨時管理授權</strong><span>可在 MyDrive 中斷磁碟或移除連線，也可至 Google 帳戶連線管理撤銷授權。移除連線會保留雲端檔案。</span></li>
+      </ul>
+    </div></section>
+    <section id="start" class="section"><div class="wrap">
+      <div class="section-intro"><h2>從一個儲存帳戶開始。</h2><p>MyDrive v2.0.0 提供免安裝及安裝封裝。首次掛載需要安裝 WinFsp 系統驅動；同一台電腦只需準備一次。</p></div>
+      <ol class="steps">
+        <li><h3>開啟 MyDrive</h3><p>完整解壓縮免安裝版，或執行安裝版。建立帳戶保護密碼，再進入「儲存帳戶」。</p></li>
+        <li><h3>連接 Google Drive 或 NAS</h3><p>選擇 Google Drive 後，按「登入 Google 並儲存」，在官方網頁授權。NAS 則依協定輸入伺服器與帳戶設定。</p></li>
+        <li><h3>新增並連接磁碟</h3><p>選擇帳戶、磁碟代號與掛載模式，先測試連線，再按「連線」，於檔案總管開啟磁碟。</p></li>
+      </ol>
+      <div class="notice"><p>Google Drive 讀寫授權使用 <code>drive</code> 範圍；唯讀使用 <code>drive.readonly</code>。兩者可存取你有權限的 Drive 檔案。請在授權前閱讀 Google 顯示的權限與本站<a href="privacy.html">隱私權政策</a>。</p></div>
+      <p><a href="privacy.html">了解資料存取與授權</a>　<a href="https://github.com/bos-tw/mydrive-site/issues">使用問題回報 ↗</a></p>
+    </div></section>
+    <section class="section"><div class="wrap faq"><h2>開始之前，你可能想知道。</h2>
+      <details><summary>掛載後，檔案會全部下載嗎？</summary><p>MyDrive 使用按需存取與本機讀寫快取，不會預先同步全部遠端資料。已開啟的內容與待上傳修改可能留在本機快取；遠端檔案通常仍需網路才能存取。</p></details>
+      <details><summary>Google 文件可以像 Office 檔案一樣編輯嗎？</summary><p>Google 原生文件預設隱藏，可選擇顯示 Office／PDF 等匯出格式。原生協作編輯請使用 Google 網頁；一般儲存在 Drive 的 Office 檔案可依授權正常讀寫。</p></details>
+      <details><summary>Google 授權為什麼可能要求重新登入？</summary><p>測試模式取得的 Drive 更新權杖有 7 天期限，需由應用專案擁有者完成適當的發布設定。正式發布後，撤銷授權、組織政策等仍可能要求重新登入。一般使用者可在帳戶編輯畫面重新授權。</p></details>
+      <details><summary>MyDrive 是 Google 或 RaiDrive 的產品嗎？</summary><p>MyDrive 是獨立專案，使用 Google Drive API 連接 Google 儲存服務。Google Drive 及 RaiDrive 的名稱與商標分別屬於其權利人；MyDrive 未宣稱與其合作或獲得其背書。</p></details>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap"><div class="footer-top"><a class="brand" href="index.html"><img src="assets/mydrive.svg" alt="" width="38" height="38">MyDrive</a><div class="footer-links"><a href="privacy.html">隱私權政策</a><a href="terms.html">服務條款</a><a href="https://github.com/bos-tw">聯絡維護者 bos-tw ↗</a></div></div><p>© 2026 MyDrive contributors · 原創程式碼採 MIT 授權，第三方元件依各自授權條款使用。</p></div></footer>
+</body>
+</html>
